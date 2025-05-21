@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Contato - PrezTech</title>
 </head>
+
 <body>
-    <section>
+    <section class="box hero">
         <header>
             <div class="logo">
                 <a href="index.html">PrezTech</a>
             </div>
-            <div class="navbar">
-                <a href="integrantes.html">Integrantes</a>
-                <a href="solucao.html">Solução</a>
-                <a href="contato.html">Contato</a>
-                <a href="faq.html">FAQ</a>
-            </div>
+            <ul class="navbar">
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
         </header>
+    
+    <div class="titulo">
         <h1>Contate-nos!</h1>
-        <div class="forms">
-           
-        </div>
-        
+        <form class="forms" name="forms" id="forms" method="get" action="">
+            <div class="nome">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            </div>
+            <div class="email">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="telefone">
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="mensagem">
+                <input type="text" name="mensagem" id="mensagem" placeholder="Insira sua mensagem" required>
+            </div>
+        </form>
+        <button type="submit" name="submit" id="submit">Enviar</button>
+    </div>
+
+    </section>
+    <section>
         <footer>
             <a>@PrezTech 2025 Todos os direitos reservados</a>
         </footer>
     </section>
 </body>
+
 </html>
